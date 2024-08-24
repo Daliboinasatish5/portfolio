@@ -3,6 +3,7 @@ import '../styles/skills.css'; // Adjust path if needed
 
 const Skills = () => {
   return (
+    
     <div className="skills-container">
       <h1 className="skills-header">Skills</h1>
       <ul className="skills-list">
