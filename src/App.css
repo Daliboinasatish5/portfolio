@@ -1,38 +1,81 @@
-.App {
-  text-align: center;
+html {
+  scroll-behavior: smooth;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+body {
+  margin: 0;
+  font-family: 'Arial', sans-serif;
+  background: #f0f4f8;
+  background-image: url();
+  background-size: cover; /* Ensures the image covers the whole background */
+  background-repeat: no-repeat; /* Prevents the image from repeating */
+  background-attachment: fixed; /* Keeps the background fixed during scroll */
+  background-position: center; /* Centers the image */
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+nav {
+  background: #6c63ff;
+  padding: 15px;
+  border-bottom: 2px solid #4a4e69;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: 1000;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
   display: flex;
-  flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
 
-.App-link {
-  color: #61dafb;
+nav ul li {
+  margin: 0 15px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+nav ul li a {
+  text-decoration: none;
+  color: #ffffff;
+  font-size: 18px;
+  font-weight: bold;
+  transition: color 0.3s, border-bottom 0.3s;
 }
+nav ul li a:hover {
+  color: #d4e4f1;
+  border-bottom: 2px solid #d4e4f1;
+}
+
+
+
+main {
+  padding-top: 60px; /* Extra top padding for the fixed nav */
+}
+
+section {
+  padding: 60px 20px;
+  margin: 60px 0;
+  border-radius: 10px;
+  background: #ffffff;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+section:not(:last-child) {
+  margin-bottom: 20px;
+}
+
+h1 {
+  color: #6c63ff;
+  font-size: 2.5em;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+
